@@ -15,7 +15,6 @@ Sistema de simulação de hidrômetro desenvolvido em Java que simula a mediçã
 - [Como Executar](#como-executar)
 - [Configuração](#configuração)
 - [Diagrama UML](#diagrama-uml)
-- [Princípios SOLID Aplicados](#princípios-solid-aplicados)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 
 ## 🎯 Sobre o Projeto
@@ -336,29 +335,6 @@ classDiagram
 4. **Display (1) --|> JPanel (1)**: Display herda de JPanel (herança de biblioteca externa)
 5. **FaltaAgua (1) → FaltaAgua (0..*)**: Uma instância FaltaAgua gerencia uma lista de eventos
 
-## 🏗️ Princípios SOLID Aplicados
-
-### **Single Responsibility Principle (SRP)**
-- ✅ `ConfiguracaoDTO`: Apenas armazena dados
-- ✅ `Configuracao`: Apenas gerencia carregamento de configuração
-- ✅ `Medidor`: Apenas calcula passagem de água
-- ✅ `Display`: Apenas apresenta informações visuais
-
-### **Open/Closed Principle (OCP)**
-- ✅ `Cano`: Aberto para extensão (novos tipos), fechado para modificação
-- ✅ `TipoFluido`: Fácil adição de novos tipos de fluidos
-
-### **Liskov Substitution Principle (LSP)**
-- ✅ `CanoEntrada` e `CanoSaida` podem substituir `Cano` sem quebrar funcionalidade
-
-### **Interface Segregation Principle (ISP)**
-- ✅ Classes não dependem de métodos que não utilizam
-- ✅ `ObjectMapper` usado apenas onde necessário
-
-### **Dependency Inversion Principle (DIP)**
-- ✅ `Configuracao` depende da abstração `ObjectMapper`, não de implementação concreta
-- ✅ `Hidrometro` composto por abstrações (interfaces conceituais)
-
 ## 🏛️ Arquitetura do Sistema
 
 ### **Camadas da Aplicação:**
@@ -379,11 +355,6 @@ classDiagram
 4. **Camada de Domínio (`abstracts/`, `components/`)**
    - `Cano.java` - Modelagem abstrata
    - `CanoEntrada.java`, `CanoSaida.java` - Implementações específicas
-
-### **Fluxo de Dados:**
-```
-config.json → Configuracao → ConfiguracaoDTO → Main → Simulador → Hidrometro → Display
-```
 
 ## 📝 Responsabilidades das Classes
 
