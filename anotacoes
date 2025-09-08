@@ -1,0 +1,35 @@
+        double diametroCanoEntradaMM = 20.0; // MM
+        double diametroCanoSaidaMM = 20.0; // MM
+        double pressaoEntrada = 2.0; // atm
+        double pressaoSaida = 0.0; // atm
+        int fatorArPorcentagem = 10;
+        double vazao = 5; // 10m/s
+        char simularFaltaDeAgua = 's';
+        int quantasVezesDeveFaltarAguaPorDia = 4;
+
+//        final int RHO_AGUA_M3 = 1000; // kg/m³
+//
+//        double variacaoPressao = (pressaoEntrada - pressaoSaida) * 101325.0; // PA
+//        double diametroCanoEntradaEmMetros = diametroCanoEntradaMM / 1000.0; // M
+//        double raioCanoEntradaEmMetros = diametroCanoEntradaEmMetros / 2.0; // M
+//        double areaEntradaM2 = Math.PI * Math.pow(raioCanoEntradaEmMetros, 2); // M²
+//
+//        System.out.println("Area Cano Entrada: " + areaEntradaM2);
+//        double vazao = Math.sqrt((2 * variacaoPressao) / RHO_AGUA_M3); // m/s
+//        System.out.println("Vazão: " + vazao);
+//        double vazaoVolumetrica = areaEntradaM2 * vazao * 1000; // l/s
+//        System.out.println("Vazão volumetrica: " + vazaoVolumetrica);
+//
+//        int deltaTempo = 10; // s
+//        double volumeIncremental = 0.0;
+//        double volumeTotal = 0.0;
+//        int i = 3;
+//        while (i > 0) {
+//            vazao = Math.sqrt((2 * variacaoPressao) / RHO_AGUA_M3); // m/s
+//            vazaoVolumetrica = areaEntradaM2 * vazao * 1000; // l/s
+//            volumeIncremental = vazaoVolumetrica * deltaTempo;
+//            volumeTotal += volumeIncremental;
+//            i--;
+//        }
+
+//        System.out.println("Volume: " + volumeTotal);

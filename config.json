@@ -1,0 +1,12 @@
+{
+  "diametroCanoEntradaEmMilimetros": 20.0,
+  "diametroCanoSaidaEmMilimetros": 20.0,
+  "fatorPorcentagemArAConsiderar": 10,
+  "vazaoEmMilimetrosPorSegundoEntrada": 10.0,
+  "vazaoEmMilimetrosPorSegundoSaida": 10.0,
+  "quantasVezesDeveFaltarAguaPorDia": 0,
+  "duracaoMinimaEmSegundosDaFaltaDeAgua": 0,
+  "duracaoMaximaEmSegundosDaFaltaDeAgua": 0,
+  "tempoSimulacaoEmSegundos": 30,
+  "atualizarDisplayHidrometroEmSegundos": 1
+}
