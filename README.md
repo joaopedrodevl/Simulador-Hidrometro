@@ -328,32 +328,6 @@ classDiagram
     FaltaAgua "1" --> "0..*" FaltaAgua : contém lista
 ```
 
-### 📝 Legendas e Convenções
-
-#### 🔗 **Tipos de Relacionamento:**
-- **`---->`** Associação/Dependência
-- **`--|>`** Herança/Generalização
-- **`--o`** Agregação
-- **`--*`** Composição
-
-#### 🔢 **Cardinalidades:**
-- **`1`** - Exatamente um
-- **`0..1`** - Zero ou um (opcional)
-- **`0..*`** - Zero ou muitos
-- **`1..*`** - Um ou muitos
-
-#### 🏷️ **Estereótipos:**
-- **`<<abstract>>`** - Classe abstrata
-- **`<<enumeration>>`** - Enumeração
-- **`<<record>>`** - Record do Java
-- **`<<external>>`** - Dependência externa
-
-#### 👁️ **Visibilidade:**
-- **`+`** - Público
-- **`-`** - Privado
-- **`#`** - Protegido
-- **`~`** - Pacote
-
 ### 🔍 **Principais Relacionamentos Explicados:**
 
 1. **Main (1) → Configuracao (1)**: Uma instância do Main utiliza exatamente uma instância de Configuracao
