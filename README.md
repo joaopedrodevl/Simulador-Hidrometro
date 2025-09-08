@@ -175,8 +175,6 @@ O sistema utiliza o arquivo `config.json` para configuração dos parâmetros:
 
 ### Diagrama de Classes
 
-![alt text](diagrama2.png)
-
 ```mermaid
 classDiagram
     class Main {
