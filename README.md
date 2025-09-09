@@ -88,7 +88,7 @@ hidrometro_v1/
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/joaopedrodevl/Simulador-Hidrometro
    cd hidrometro_v1
    ```
 
